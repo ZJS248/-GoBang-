@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./chess.css">
+</head>
+<body>
+    <div id="main">
+        <span id="logo">五子棋</span>
+        <div id="main_game"></div>
+        <div id="list">
+            <div id="Mine_left">
+                <div>
+                    <span>剩余白子数:</span> <span id="white_chess_num"></span>
+                </div>
+                <div>
+                    <span>剩余黑子数:</span> <span id="black_chess_num"></span>
+                </div>
+            </div>
+            <div id="time_left"><button onclick="game_resert()" class="btn">开始/重置</button><button id="lastchess" onclick="lastchess()" class="btn">上一步</button></div>
+            <div id="GameMode">
+                    <div>游戏模式选择</div>
+                    <div><input type="radio" name="mode" onclick="game_resert()" class="radiomode">单局模式</div>
+                    <div><input type="radio" name="mode" onclick="game_resert()" class="radiomode" checked>积分模式</div>
+            </div>
+            <div id="game_grade">
+                <span>双方得分</span>
+                <div>
+                    <span>白棋得分:</span> <span id="whitechess_grade">0</span>
+                </div>
+                <div>
+                    <span>黑棋得分:</span> <span id="blackchess_grade">0</span>
+                </div>
+            </div>
+            <div id="Information"><span id="tips"></span></div>
+        </div>
+    </div>
+</body>
+<script src="./chess.js"></script>
+</html>
